@@ -1,3 +1,16 @@
+/**
+ * Node.java
+ *
+ * This was a provided class of nodes that contain a reference to a left child and a right child. It is parameterized.
+ *
+ * Parameters:
+ * @param <Key>
+ * @param <Value>
+ *
+ * Authors: Alainey Hellman (This file), Jack Hughes (This comment)
+ * Date: ???
+ * -JBH
+ */
 public class Node<Key extends Comparable<Key>, Value> {
 
     private Key key;
@@ -10,6 +23,8 @@ public class Node<Key extends Comparable<Key>, Value> {
         this.key = key;
         this.value = value;
         this.size = size;
+        this.left = null;
+        this.right = null;
     }
 
     @Override
